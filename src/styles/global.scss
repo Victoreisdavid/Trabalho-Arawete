@@ -1,0 +1,95 @@
+@use "colors";
+@use "fonts";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {  
+    background-color: colors.$bodyColor;
+    color: colors.$fontColor;
+    font-family: fonts.$font;
+    margin-top: 88px;
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+#sections {
+    text-align: justify;
+
+    section {
+        display: flex;
+        align-items: center;
+        gap: 38px;
+
+        margin-bottom: 3rem;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column !important;
+        }
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+h2 {
+    font-size: 1.3em;
+    margin: 0.4rem 0 0.4rem 0;
+}
+
+p {
+    font-size: 1.05em;
+    margin: 0.4rem 0 0.4rem 0;
+}
+
+#credits {
+    text-align: center;
+    margin-top: 32vh;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    #images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .dev {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #imgs-two {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: fit-content;
+        margin: auto;
+        gap: 20px;
+    }
+}

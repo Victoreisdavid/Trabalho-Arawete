@@ -1,0 +1,20 @@
+{
+  "name": "trabalho-arawete",
+  "version": "1.0.0",
+  "description": "Website de trabalho escolar sobre a tribo indígena Arawete",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "astro": "^3.5.5",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.2",
+    "typescript": "^5.3.2"
+  }
+}
